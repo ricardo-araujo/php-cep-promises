@@ -1,0 +1,31 @@
+{
+    "name": "ricardoaraujo/php-cep-promises",
+    "description": "Projeto que usa promises para captura de endereço de determinado cep",
+    "type": "project",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "symfony/dom-crawler": "^3.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "authors": [
+        {
+            "name": "Ricardo Araujo",
+            "email": "ricardo.araujo@forseti.com.br"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "CEP\\": "src/"
+        },
+        "files": [
+            "src/utils.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CEP\\Tests\\": "tests/"
+        }
+    }
+}
